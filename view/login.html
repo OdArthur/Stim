@@ -1,0 +1,42 @@
+<!-- ~/php/tp1/view/login.html -->
+<!DOCTYPE html>
+<html class="responsive" lang="fr">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Stim | Arthur ODIN</title>
+	<link rel="icon" href="/images/favicon.ico" type="image/ico">
+	<link href="/css/logincss.css" rel="stylesheet" type="text/css">
+</head>
+<Body>
+	<div id="pageconnect">
+		<form method="post" action="/model/traitement.php">
+			<div class="connect">
+				<center><H1>CONNEXION</H1></center>
+				</BR>
+				<H2>Nom de compte Stim</H2>
+				<input type="text" name="user" id="user" size="30" maxlength="50" required /></BR>
+				</BR>
+				<H2>Mot de passe</H2>
+				<input type="password" name="password" id="password" size="30" maxlength="50" required /></BR>
+				</BR></BR>
+				<button type="submit" class="BtPerso" name="connexion">Connexion</button>
+				</BR>
+					<center><a class="lienvers" href="newpassword.php">Mot de passe oublié ?</a></center>
+				</BR>
+			</div>
+		</form>
+		<div class="newuser">			
+			Inscrivez-vous sur Stim et découvrez</BR>
+			des milliers de jeux auxquels jouer.</BR>
+			</BR><a class="lienvers" href="/view/mapub.php">En savoir plus</a></BR>
+			<img src="/images/join_pc.png" alt="Image" width="300px"  /></BR>
+			C'est gratuit et facile à utiliser.
+			</BR></BR>
+			<form method="post" action="/view/inscription.php">
+				<button type="submit" class="BtPerso" name="inscription">Inscription</button>
+			</form>
+			</BR>
+		</div>
+	</div>
+</Body>
+</html>

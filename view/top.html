@@ -1,0 +1,27 @@
+<!-- ~/php/tp1/view/top.php -->
+<!DOCTYPE html>
+<?php session_start();  ?>
+<html class="responsive" lang="fr">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<Body>
+<?php
+		
+		if(!isset($_SESSION['idUser']))
+		{
+			header('Location: login.html');
+		}
+?>
+	<div style="width: 100%; height: 2.3em; border-bottom: 2px solid black; text-align: center; display: flex;">
+		<h1 style="width: 100%; margin-top: 0em">Stim</h1>
+		<div style="padding-right: 10px;">
+			<form action="/public/profil.php">
+			<button type="Submit" style="background-color: transparent; border: none; cursor: pointer; outline: none;">
+			<img src="<?php echo "/images/" . $_SESSION['photo']; ?>" style="  background-size: cover; height: 2.5em; width: 2.5em; border-radius: 50%;">
+			</button>
+			</form>
+		</div>
+	</div>
+</Body>
+</html>

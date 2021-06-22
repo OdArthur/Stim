@@ -1,0 +1,88 @@
+body {
+  display: block;
+  height: 1000px;
+  background-image: linear-gradient(to bottom, rgba(0,255,0,0.5), rgba(0,255,255,0.5)),url("images/acct_creation_bg.jpg");
+  background-position: center;
+  background-size: cover;
+  min-width: 300px;
+  min-height: 75vh;
+}
+header {
+  margin: 20px;
+}
+h1 {
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+p {
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+#form-outer {
+  background-color: rgb(0, 200, 150);
+  width: 75%;
+  max-width: 700px;
+  margin: 50px auto auto auto;
+  padding: 10px;
+  padding-bottom: 40px;
+}
+.labels {
+  display: inline-block;
+  text-align: right;
+  width: 40%;
+  padding: 5px;
+  vertical-align: top;
+  margin-top: 10px;
+}
+.right {
+  width: 40%;
+  margin-top: 10px;
+  margin-left: 1em;
+}
+#Onimage {
+  width: 60px;
+  height: auto;
+}
+.middle {
+  text-align: center;
+  justify-content: center;
+}
+.radio-toolbar input[type="radio"] {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+.radio-toolbar label:hover {
+  background-color: rgb(0, 200, 150);
+}
+.radio-toolbar input[type="radio"]:checked + label {
+  opacity: 50%;
+  background-color: rgb(179, 255, 179);
+  border-color: blue;
+}
+.top-space {
+  margin-top: 10px;
+}
+.BtPerso
+{
+	align-items: center;
+	height: 40px;
+	width: 250px;
+	font-size: 1.6em;
+	display:block;
+    float:center;
+    margin:auto;
+	background:    #e8eb46;
+	border:        1px solid #222222;
+	border-radius: 8px;
+	box-shadow:    1px 1px #777777;
+	padding: 0px 15px 0px 15px; 
+	color:         #0;
+	text-align:    center;
+	text-shadow:   1px 1px #000000;
+}
+.BtPerso a:hover, Button.BtPerso:hover
+{
+	font:          normal bold 1.5em Arial, sans-serif;
+	color:         #ff0000;
+}
