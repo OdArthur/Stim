@@ -5,18 +5,6 @@ $query = $dbh->prepare('SELECT IdUser_Achat, IdGame_Achat FROM `achat`');
 $query->execute();
 $achats = $query -> fetchAll();
 
-/*
-$categories=array();
-foreach ($games as $categorie => $categorieId)
-{
-	if (array_search($categorieId['categorie'],$categories)==False)
-	{
-		array_push($categories,$categorieId['categorie']);
-	}
-}
-sort($categories);
-*/
-
 function createAchat($dbh, $Achat) {
 		if(IsUnique($dbh, $Achat)){
         $query = $dbh->prepare('INSERT INTO achat (IdUser_Achat, IdGame_Achat) VALUES (:IdUser_Achat, :IdGame_Achat)');

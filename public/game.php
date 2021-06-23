@@ -29,9 +29,3 @@ else{
 	include(__DIR__ . '/../view/top.html');
 	include __DIR__ . '/../view/game.php';
 }
-
-
-
-
-
-//echo 'ID is : ' . $cityID;

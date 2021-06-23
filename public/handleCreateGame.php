@@ -26,6 +26,4 @@ include __DIR__ . '/../view/top.html';
     $result = createGame($dbh, $game);
 	
 	header('Location: /public/main.php');
-	
-//$cities = GetCities($dbh);
 
